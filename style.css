@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(to right, #9ef278 20%, #fca59f 70%);
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+
+.output-box {
+  min-height: 80px;
+  max-width: 800px;
+  background: white;
+  color: black;
+  border: 2px dashed #6c757d;
+  border-radius: 12px;
+  margin: auto;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0; transform: translateY(30px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
